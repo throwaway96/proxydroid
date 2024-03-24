@@ -232,6 +232,7 @@ public class BypassListActivity extends AppCompatActivity implements
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
 		if (requestCode == Constraints.IMPORT_REQUEST) {
 			if (resultCode == RESULT_OK) {
 				if (data == null)
