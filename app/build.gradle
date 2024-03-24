@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "org.proxydroid"
-    compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
     defaultConfig {
         applicationId "org.proxydroid"
-        minSdkVersion 16
-        targetSdkVersion 29
+        minSdkVersion 30
+        targetSdkVersion 30
         versionCode 72
         versionName "3.2.0"
 
@@ -23,16 +23,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+    }
     compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
     externalNativeBuild {
         cmake {
-            version '3.10.2'
+            version '3.28.3'
             path "src/main/cpp/CMakeLists.txt"
         }
+    }
+
+    lint {
+        // XXX: It wants targetSdkVersion 33
+        disable += ['ExpiredTargetSdkVersion']
     }
 }
 
