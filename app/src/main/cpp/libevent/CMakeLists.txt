@@ -1,3 +1,7 @@
+project(libevent
+        VERSION 2.0.21
+        LANGUAGES C)
+
 add_library(event STATIC
         buffer.c
         bufferevent.c

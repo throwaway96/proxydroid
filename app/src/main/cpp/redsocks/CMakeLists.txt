@@ -1,3 +1,7 @@
+project(redsocks
+        VERSION 0.4
+        LANGUAGES C)
+
 add_executable(redsocks
         base.c dnstc.c http-connect.c
         log.c md5.c socks5.c
