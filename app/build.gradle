@@ -36,8 +36,10 @@ android {
     }
 }
 
-configurations {
-    compile.exclude group: "junit", module: "junit"
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        substitute module('org.hamcrest:hamcrest-core:1.1') using module('junit:junit:4.10')
+    }
 }
 
 dependencies {
