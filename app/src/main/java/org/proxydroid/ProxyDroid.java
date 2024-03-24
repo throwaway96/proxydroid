@@ -248,8 +248,10 @@ public class ProxyDroid extends PreferenceActivity
     }
 
     private void loadNetworkList() {
-        WifiManager wm = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        List<WifiConfiguration> wcs = wm.getConfiguredNetworks();
+        /* XXX: Permission stuff, and getConfiguredNetworks() doesn't work on API 29+. */
+        // WifiManager wm = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        // List<WifiConfiguration> wcs = wm.getConfiguredNetworks();
+        List<WifiConfiguration> wcs = null;
         String[] ssidEntries = null;
         String[] pureSsid = null;
         int n = 3;
