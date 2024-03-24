@@ -77,7 +77,7 @@
     <string name="ssid">Bound Network</string>
     <string name="ssid_summary">Bind your proxy setting to 2G/3G Network or
 		specified SSID</string>
-    <string name="excluded_ssid">Never Bound these WiFi SSID</string>
+    <string name="excluded_ssid">Never bind these WiFi SSIDs</string>
     <string name="excluded_ssid_summary">Never bind the proxy setting to specified SSID</string>
 
     <string-array name="ssid_default_values"></string-array>
@@ -111,7 +111,7 @@
 		site on
 		google code. \n\n(proxydroid.googlecode.com)</string>
     <string name="about">About</string>
-    <string name="about_title">ProxyDroid %s</string>
+    <string name="about_title" translatable="false">ProxyDroid %s</string>
     <string name="change_name">Rename</string>
     <string name="alert_dialog_ok">OK</string>
     <string name="alert_dialog_cancel">Cancel</string>

@@ -48,6 +48,7 @@
 
     <string name="host">Адрес</string>
     <string name="host_summary">Адрес прокси-сервера</string>
+    <string name="host_pac">PAC</string>
     <string name="host_pac_summary">URL вашего PAC-файла</string>
     <string name="pac">Автоматическая настройка</string>
     <string name="pac_summary">Автоматически получать настройки прокси-сервера из PAC-файла</string>
@@ -66,6 +67,8 @@
     <string name="password_summary">Пароль прокси-сервера</string>
     <string name="ntlm">Авторизация NTLM</string>
     <string name="ntlm_summary">Включает авторизацию по NTLM / NTLM2</string>
+    <string name="certificate">Сертификат</string>
+    <string name="certificate_summary">Сертификат клиента для аутентификации HTTPS</string>
     <string name="domain">Домен</string>
     <string name="domain_summary">Имя Домена для NTLM-авторизации</string>
 
@@ -76,10 +79,13 @@
     <string name="ssid">Связанная сеть</string>
     <string name="ssid_summary">Связать настройки с указанным адресом 2G/3G сети
         или её SSID</string>
+    <string name="excluded_ssid">Никогда не привязывайте эти SSID WiFi</string>
+    <string name="excluded_ssid_summary">Никогда не привязывайте настройку прокси к указанному SSID</string>
 
     <string name="auto_set_proxy">Для всех приложений</string>
     <string name="auto_set_proxy_summary">Включает глобальный режим (требуются права ROOT
 		и поддержка IPTABLES)</string>
+    <string name="dns_proxy">DNS-прокси</string>
     <string name="dns_proxy_summary">Включает проксирование DNS-запросов (только для опытных)</string>
 
     <!-- settings proxyed apps category -->
@@ -114,6 +120,7 @@
     <string name="profile_new">Новый Профиль</string>
     <string name="profile_base">Профиль</string>
     <string name="profile_del">Удалить</string>
+    <string name="profile_del_confirm">Удалить этот профиль?</string>
 
     <!-- proxy type -->
     <string name="proxy_type">Тип прокси-сервера</string>

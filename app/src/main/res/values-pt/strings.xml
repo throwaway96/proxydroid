@@ -75,6 +75,8 @@
     <string name="auto_connect_summary">Iniciar o Proxy quando a rede definida estiver disponível</string>
     <string name="ssid">Rede associada</string>
     <string name="ssid_summary">Associar a configuração do proxy à rede 2G/3G ou ao SSID especificado</string>
+    <string name="excluded_ssid">Nunca vincule esses SSIDs WiFi</string>
+    <string name="excluded_ssid_summary">Nunca vincule a configuração de proxy ao SSID especificado</string>
 
     <string-array name="ssid_default_values"></string-array>
     <string-array name="ssid_default_entries"></string-array>
@@ -99,7 +101,6 @@
         GPLv3. \n\nSe tiver alguma questão, por favor visite
         o site do nosso projeto no google code. \n\n(proxydroid.googlecode.com)</string>
     <string name="about">Acerca</string>
-    <string name="about_title">ProxyDroid %s</string>
     <string name="change_name">Renomear</string>
     <string name="alert_dialog_ok">OK</string>
     <string name="alert_dialog_cancel">Cancelar</string>
